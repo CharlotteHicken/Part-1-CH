@@ -17,4 +17,9 @@ public class Missile : MonoBehaviour
     {
         transform.Translate(1 * speed * Time.deltaTime, 0, 0);
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Destroy(gameObject);
+    }
 }
