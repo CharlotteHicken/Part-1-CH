@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Car : MonoBehaviour
@@ -8,6 +9,7 @@ public class Car : MonoBehaviour
     float steering;
     public float steeringSpeed = 200;
     public float forwardSpeed = 500;
+    public float maxSpeed = 700;
    
     public Rigidbody2D rigidbody;
 
@@ -28,6 +30,9 @@ public class Car : MonoBehaviour
     {
         rigidbody.AddTorque(steering * -steeringSpeed * Time.deltaTime);
         Vector2 force = transform.up * acceleration * forwardSpeed * Time.deltaTime;
-        rigidbody.AddForce(force);
+        if(rigidbody.velocity.magnitude < maxSpeed)
+        {
+            rigidbody.AddForce(force);
+        }
     }
 }
