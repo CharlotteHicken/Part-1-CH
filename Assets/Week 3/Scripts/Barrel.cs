@@ -24,5 +24,10 @@ public class Barrel : MonoBehaviour
     {
         down.SetActive(true);
         up.SetActive(false);
+
+        if (collision.gameObject.CompareTag("FinishLine"))
+        {
+            Debug.Log("You are the ultimate barrel mover!");
+        }
     }
 }
