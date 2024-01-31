@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Door
   - FinishLine
+  - Ice
   layers:
   - Default
   - TransparentFX
