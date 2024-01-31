@@ -21,7 +21,15 @@ public class Birdy : MonoBehaviour
         rigidbody.AddForce(force);
     }
 
-    void
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        rigidbody.drag = 0;
+    }
 
-    
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        rigidbody.drag = 2;
+    }
+
+
 }

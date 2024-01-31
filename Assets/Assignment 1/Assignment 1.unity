@@ -257,7 +257,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 13.608697
+  orthographic size: 10.4825945
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -282,7 +282,7 @@ Transform:
   m_GameObject: {fileID: 1022757325}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20.569725, y: -0.8752111, z: -27.245647}
+  m_LocalPosition: {x: -35.36, y: -4.501564, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6382,9 +6382,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.00000011920929}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.38840353
 --- !u!212 &1936713677
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6426,7 +6426,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fe5fcbd67997d334a985c369ccbf2d9d, type: 3}
+  m_Sprite: {fileID: -1237845090, guid: 07d97a4bef33a4048a62c2e3a45c2d8d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6692,7 +6692,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1022757328}
+  - {fileID: 1718130756}
   - {fileID: 2126336709}
   - {fileID: 574990029}
   - {fileID: 1936713678}
-  - {fileID: 1718130756}
